@@ -14,7 +14,6 @@
         <svg-icon :icon-class="item.meta && item.meta.icon" />
         <span class="menu-title" :title="hasTitle(item.meta.title)">{{ item.meta.title }}</span>
       </template>
-
       <sidebar-item
         v-for="(child, index) in item.children"
         :key="child.path + index"
